@@ -38,17 +38,17 @@ const Body = ({ data }) => {
                                         </tr>
                                     </thead>
                                     {item.disciplinas.map((disciplina) =>
-                                        <tbody key={item.serie+disciplina.nome}>
+                                        <tbody key={item.serie+item.tipoTurma+disciplina.nome+disciplina.vP1}>
                                             <tr>
                                                 <td className="disciplina">{disciplina.nome}</td>
-                                                <td>{disciplina.vP1 == 0 ? '' : disciplina.vP1}</td>
-                                                <td>{disciplina.vG1 == 0 ? '' : disciplina.vG1}</td>
-                                                <td>{disciplina.vP2 == 0 ? '' : disciplina.vP2}</td>
-                                                <td>{disciplina.vG2 == 0 ? '' : disciplina.vG2}</td>
-                                                <td>{disciplina.vP3 == 0 ? '' : disciplina.vP3}</td>
-                                                <td>{disciplina.vG3 == 0 ? '' : disciplina.vG3}</td>
-                                                <td>{disciplina.vP4 == 0 ? '' : disciplina.vP4}</td>
-                                                <td>{disciplina.vG4 == 0 ? '' : disciplina.vG4}</td>
+                                                <td>{disciplina.vP1 === 0 ? '' : disciplina.vP1}</td>
+                                                <td>{disciplina.vG1 === 0 ? '' : disciplina.vG1}</td>
+                                                <td>{disciplina.vP2 === 0 ? '' : disciplina.vP2}</td>
+                                                <td>{disciplina.vG2 === 0 ? '' : disciplina.vG2}</td>
+                                                <td>{disciplina.vP3 === 0 ? '' : disciplina.vP3}</td>
+                                                <td>{disciplina.vG3 === 0 ? '' : disciplina.vG3}</td>
+                                                <td>{disciplina.vP4 === 0 ? '' : disciplina.vP4}</td>
+                                                <td>{disciplina.vG4 === 0 ? '' : disciplina.vG4}</td>
                                             </tr>
                                         </tbody>)}
 

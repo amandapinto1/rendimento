@@ -1,5 +1,5 @@
 import axios from 'axios'
-import cors from 'cors'
+
 export const getNotas = async (user) => {
   const headers = {
     'Content-Type': 'text/plain',
@@ -17,6 +17,4 @@ export const getNotas = async (user) => {
   };
 
 
-export default {
-    getNotas
-}
+export default getNotas;
